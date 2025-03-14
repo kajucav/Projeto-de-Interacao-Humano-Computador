@@ -1,60 +1,98 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+* {
     margin: 0;
-    padding: 20px;
-    background-color: #282429;
-    font-family: 'Poppins', sans-serif;
-
-}
-.container {
-    background: rgba(212, 135, 167, 0.829);
-    padding: 20px;
-    border-radius: 20px;
-    max-width: 600px;
-    margin: auto;
-    box-shadow: 0px 0px 10px rgba(248, 247, 247, 0.658);
-}
-img {
-    width: 150px;
-    border-radius: 50%;
-}
-ul {
-    list-style: none;
     padding: 0;
-}
-.social-icons img {
-    width: 50px;
-    margin: 10px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-h1 {
-    font-family: 'Poppins', sans-serif;
+body {
+    background-color: #f0f2f5;
 }
 
-p {
-    font-family: 'Roboto', sans-serif;
+.profile-header {
+    background-color: #984c9b;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
 }
 
-.social-icons {
+.profile-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: -100px auto 1rem;
+    border: 5px solid white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.profile-info {
+    margin: 2rem 0;
+}
+
+.bio {
+    color: #666;
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+.hobbies-list {
+    list-style: none;
+    margin: 1.5rem 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.hobbies-list li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.social-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
 }
 
-.social-icons a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
+.social-icon {
+    font-size: 2rem;
+    color: #2c3e50;
+    transition: transform 0.3s ease;
 }
 
-.social-icons a:hover {
-    transform: scale(1.1);
+.social-icon:hover {
+    transform: translateY(-3px);
+    color: #3498db;
 }
 
-.social-icons img {
-    width: 30px;
-    height: 30px;
+@media (max-width: 768px) {
+    .profile-header h1 {
+        font-size: 2rem;
+    }
+    
+    .profile-img {
+        margin-top: -80px;
+        width: 160px;
+        height: 160px;
+    }
 }

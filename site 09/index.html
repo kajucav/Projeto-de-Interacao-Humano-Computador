@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Podcast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="podcast-header">
+        <h1>Tech Talks</h1>
+        <p>Conversas sobre tecnologia e inovação</p>
+    </header>
+
+    <main class="container">
+        <section class="player-section">
+            <h2>Último Episódio</h2>
+            <audio id="audioPlayer" controls>
+                <source id="audioSource" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </section>
+
+        <section class="episodes-section">
+            <h2>Episódios Anteriores</h2>
+            <div class="table-container">
+                <table class="episodes-table">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Data</th>
+                            <th>Duração</th>
+                        </tr>
+                    </thead>
+                    <tbody id="episodesBody">
+                        <!-- Dados preenchidos via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

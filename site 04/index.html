@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Kaju Blog</h1>
+    </header>
+    
+    <section class="postagem">
+        <h2>Tecnologia</h2>
+        <img src="C:\Users\Pichau\interacaohumanocomputador\site 04\img\img 1.jpeg" alt="Projeto 1">
+        <p>A tecnologia está mudando o mundo.</p>
+    </section>
+    
+    <section class="comentarios">
+        <h3>Deixe um Comentário</h3>
+        <form id="comentario-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="comentario">Comentário:</label>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        
+        <h3>Comentários</h3>
+        <div id="lista-comentarios"></div>
+    </section>
+</body>
+</html>
